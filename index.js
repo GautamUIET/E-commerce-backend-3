@@ -45,7 +45,7 @@ app.post("/upload", upload.single('products'), (req, res) => {
   if (req.file) {
     res.json({
       success: 1,
-      image_url: `https://ecommerce-backend-2-1.onrender.com/${req.file.filename}`
+      image_url: `https://ecommerce-backend-2-2.onrender.com/${req.file.filename}`
     });
   } else {
     res.status(400).json({ success: 0, message: "No file uploaded" });
